@@ -1,0 +1,334 @@
+/********Style général**********/
+html{
+	font-size: 62.5%;
+}
+body{
+	max-width: 110rem;
+	background-image: url(../img/fond.png);
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+	font-size: 1.8rem;
+	color: #989898;
+}
+hr{
+	color: #eff0f2;
+	margin: 0 10%;
+	opacity: 0.3;
+}
+/*********Version mobile*********/
+/********header********/
+
+header img{
+	width: 10%;
+}
+header nav a{
+	text-decoration: none;
+	color: #989898;
+}
+nav i, nav a{
+	display: block;
+	padding: 2%;
+	font-size: 2rem;
+}
+header strong{
+	display: block;
+	font-size: 2.5rem;
+	padding-bottom: 10%;
+}
+#header2{
+	background-image: url(../img/bg_header.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	color: white;
+	padding: 20rem 2rem;
+	margin-top: 4rem;
+}
+#header2 a{
+	text-decoration: none;
+	color: white;
+	background-color: #e32f5e;
+	padding: 2%;
+	border-radius: 5%;
+}
+#header2 p{
+	padding-top: 3%;
+	padding-bottom: 10%;
+}
+h1{
+	font-size: 4rem;
+}
+h2{
+	font-size: 3.5rem;
+	color: #e32f5e;
+}
+h3{
+	font-size: 3rem;
+	color: #e32f5e;
+}
+/********main**********/
+main{
+	width: 90%;
+	margin: auto;
+}
+/******premier article*******/
+
+main strong{
+	color: #747577;
+}
+
+#art1{
+	margin-top: 30%;
+	margin-bottom: 20%;
+}
+#art1 div{
+	padding: 5%;
+}
+
+/*******2ème article********/
+#art2 div{
+	padding: 10% 0;
+}
+#art2 div i{
+	padding: 10%;
+	border-radius: 50%;
+	background-color: #eeeff1;
+	border:0.1rem solid rgba(153,153,153,255);
+}
+
+/*********3ème article**********/
+#art3{
+	width: 80%;
+	margin:auto;
+	/*text-align: left;*/
+}
+#art3 h4{
+	color: #e32f5e;
+	text-align: left;
+}
+
+#art3 img{
+	width: 100%
+}
+#art3 a{
+	text-decoration: none;
+	color: #e32f5e;
+	padding-left: 10%;
+	text-align: left;
+	display: block;
+}
+
+/********4ème article********/
+#art4{
+	width: 80%;
+	margin: auto;
+	text-align: left;
+}
+
+form input:first-child{
+	background-image: url(../img/bg_form_name.svg);
+	
+}
+form input, form textarea{
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size:6rem 5rem;
+	text-align: center;
+	border-radius: 2rem;
+	display: block;
+	margin:auto;
+	padding: 3%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	width: 80%;
+}
+form textarea{
+	resize:none;
+	
+	height: 2.5rem;
+	background-image: url(../img/bg_form_message.svg);
+}
+form input:nth-child(2){
+	background-image: url(../img/bg_form_mail.svg);
+}
+form button{
+	border-radius: 0%;
+	padding: 3%;
+	color: white;
+	background-color: #747577;
+	border:0;
+}
+form button:nth-child(4){
+	background-color: #e32f5e;
+}
+/***********footer********/
+footer{
+	color: #747577;
+	text-align: center;
+	padding: 2%;
+	margin-top:20%;
+}
+footer div a{
+	padding: 1%;
+	color: #e32f5e;
+	text-decoration: none;
+}
+footer  img{
+	width: 10%;
+}
+footer section{
+	margin-top: 5%
+}
+
+/*********version desktop***********/
+@media screen and (min-width: 1024px){
+	body{
+		margin: auto;
+	}
+	header{
+		margin-top: 3%
+	}
+	header section:first-child{
+		width: 80%;
+		margin:auto;
+	}
+	header img{
+		width: 50%;
+	}
+	header section div{
+		float: left;
+	}
+	header nav article{
+		display: inline-block;
+		width: 20%;
+	}
+	#header2{
+	
+	background-position: center;
+	
+	}
+	
+	/********main**********/
+	main{
+		margin-top: -20rem;
+	}
+	/*********articles*********/
+	#art1 div{
+		display: inline-block;
+	}
+	#art2{
+		margin-top:-20rem;
+	}
+	#art2 div{
+		display: inline-block;
+		width: 30%;
+	}
+	#art3{
+		margin-top:-10rem;
+	}
+	#art3 img{
+		float: right;
+		width: 50%;
+	}
+
+	#art3 div{
+		text-align: left;
+	}
+	#art3 #time, #art3 #flower{
+		float: left;
+	}
+	#art4 h2{
+		text-align: center;
+	}
+	form{
+		width: 80%;
+		margin: auto;
+	}
+	form input{
+		display: inline-block;
+		width: 47%;
+		box-sizing: border-box;
+	}
+	#inputmail{
+		margin-left: 6%;
+	}
+	form input, form textarea{
+	text-align: center;
+	border-radius: 3rem;
+	padding: 2%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+form textarea{
+	width: 95%
+}
+
+footer{
+	margin-top: 5%;
+}
+footer img{
+	width: 5%
+}
+}
+/*******version tablette**********/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	#header2{
+	
+	background-position: center;
+	
+	}
+	#art1{
+		margin-top: 10%;
+	}
+	#art2{
+		margin-top: -15%;
+	}
+	#art2 div {
+		display: block;
+		padding: 3%
+	}
+	#art2 div i{
+		padding: 3%
+	}
+	#art3 img{
+		float: right;
+		width: 50%;
+	}
+
+	#art3 div{
+		text-align: left;
+	}
+	#art3 #time, #art3 #flower{
+		float: left;
+	}
+	#art4 h2{
+		text-align: center;
+	}
+	form{
+		width: 80%;
+		margin: auto;
+	}
+	form input{
+		display: inline-block;
+		width: 47%;
+		box-sizing: border-box;
+	}
+	#inputmail{
+		margin-left: 6%;
+	}
+	form input, form textarea{
+	text-align: center;
+	border-radius: 3rem;
+	padding: 2%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+form textarea{
+	width: 100%;
+}
+footer{
+	margin-top: 5%;
+}
+footer img{
+	width: 5%
+}
+}
